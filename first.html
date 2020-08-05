@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.3">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<link rel="stylesheet"  href="./common_css/common.css"/>
+		<style>
+			#banner{position: relative;}
+			#banner .banner_list{width: 100%; height: 463px;}
+			#banner .banner_list li{width: 100%; height: 100%; background:center 0 no-repeat;
+							position: absolute;
+							left: 0px;
+							top: 0px;
+							opacity: 0;
+							z-index: 1;
+			}
+			#banner .banner_list li.active{opacity: 1; z-index: 10;}
+			#banner .banner_btn{z-index: 20; width: 100%; position: absolute; bottom: 22px; font-size: 0; text-align: center;}
+			#banner .banner_btn li{
+				display: inline-block;
+				width: 11px;
+				height: 11px;
+				border: solid white 2px;
+				box-sizing: border-box;
+				margin: 0 10px;
+				cursor: pointer;
+				border-radius: 50%;
+			}
+			#banner banner_btn li.active{background: white;}
+		
+		
+		     
+			 #service{overflow: hidden;}
+		
+		</style>
+	</head>
+	<body>
+		<div id="head" class="container">
+			<div class="head_loge left">
+				<a href="#">
+					<img src="./image/logo.png" alt="博文尚美" title="博文尚美"/>
+				</a>
+			</div>
+			<ul class="head_menu right">
+				<li><a href="">HOME</a></li>
+				<li><a href="">PORTFOLIO</a></li>
+				<li><a href="">ABOUTA</a></li>
+				<li><a href="">SERVICES</a></li>
+				<li><a href="">NEW&EVENTS</a></li>
+				<li><a href="">CONTCAT</a></li>
+			</ul>
+		</div>
+	</body>
+        <div id="banner" class="content-fluid">
+				<ul class="banner_list">
+					<li class="active" style="background-image: url(./image/banner.png)">
+						<a href="#"></a>
+					</li>
+					<li style="background-image: url(./image/banner.png)">
+						<a href="#"></a>
+					</li>
+					<li style="background-image: url(./image/banner.png)">
+						<a href="#"></a>
+					</li>
+					<li style="background-image: url(./image/banner.png)">
+						<a href="#"></a>
+					</li>
+				</ul>
+				<ol class="banner_btn">
+					<li class="active"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+		</div>
+        <div id="service" class="container">
+			<div class="area_title">
+				<h2>服务范围</h2>
+				<p>OUR SERVICE</p>
+			</div>
+		</div>
+</html>
