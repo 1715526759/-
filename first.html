@@ -109,6 +109,7 @@
         }
 
         #case {
+
         }
 
         #case .area_title h2 {
@@ -156,11 +157,11 @@
 
 
         #news {
-
+             min-height: 310px;
         }
 
         #news dl {
-
+            margin-top: 41px;
         }
 
 
@@ -173,6 +174,7 @@
         #news dl dd {
             float: left;
             width: 829px;
+            margin-top: 5px;
         }
 
         #news dl dd ul{
@@ -183,16 +185,52 @@
             float: left;
             width: 50%;
         }
-
+        #news dl dd li:nth-of-type(3){
+            margin-top: 40px;
+        }
+        #news dl dd li:nth-of-type(4){
+            margin-top: 40px;
+        }
 
         #news dl dd .date {
+            float: left;
+            width: 83px;
+            height: 73px;
+            border-right: solid #e5e5e5 1px;
+            text-align: center;
         }
-
+        #news dl dd .date h2{
+            font-size: 30px;
+            color: #61c4b2;
+            font-weight: bold;
+        }
+        #news dl dd .date p{
+            font-size: 14px;
+            color: #9c9c9c;
+        }
 
         #news dl dd .content {
+            float: left;
+            margin-left: 18px;
+        }
+        #news dl dd .content h3{
+            font-size: 14px;
+            line-height: 14px;
+            color: #808080;
+            margin-top: 5px;
+        }
+        #news dl dd .content p{
+            font-size: 12px;
+            line-height: 21px;
+            margin-top: 10px;
         }
 
 
+        #foot{clear: both;background: #67c5b5;height: 52px;margin-top: 60px;vertical-align: bottom;}
+        #foot p{font-size: 12px; color: white; line-height: 52px}
+        #foot .right{color:white}
+        #foot a{font-size: 12px; color:white;line-height: 52px;margin:0 10px}
+        #foot a:hover{text-decoration: underline;cursor: pointer}
 
     </style>
 </head>
@@ -322,11 +360,11 @@
                 </li>
 
                 <li>
-                    <div>
+                    <div class="date">
                         <h2>28</h2>
                         <p>OTC</p>
                     </div>
-                    <div>
+                    <div class="content">
                         <h3>如何成为一名优秀的网站设计师</h3>
                         <p>
                             很多网站设计师在接到不同类型客户的单子时，常常都是
@@ -337,11 +375,11 @@
                 </li>
 
                 <li>
-                    <div>
+                    <div class="date">
                         <h2>28</h2>
                         <p>OTC</p>
                     </div>
-                    <div>
+                    <div class="content">
                         <h3>如何成为一名优秀的网站设计师</h3>
                         <p>
                             很多网站设计师在接到不同类型客户的单子时，常常都是
@@ -352,11 +390,11 @@
                 </li>
 
                 <li>
-                    <div>
+                    <div class="date">
                         <h2>28</h2>
                         <p>OTC</p>
                     </div>
-                    <div>
+                    <div class="content">
                         <h3>如何成为一名优秀的网站设计师</h3>
                         <p>
                             很多网站设计师在接到不同类型客户的单子时，常常都是
@@ -369,6 +407,15 @@
             </ul>
         </dd>
     </dl>
+</div>
+<div id="foot" class="content-fluid">
+    <div class="container">
+        <p class="left">
+            Copyright 2006-2014 Bowenshangmei Culture All Rights Reserved
+        </p>
+        <div class="right">
+            <a>Home</a> | <a>About</a> | <a>Portfolio</a> | <a>Contact</a>
+        </div>
 </div>
 </body>
 
