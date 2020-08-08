@@ -156,36 +156,43 @@
 
 
         #news {
+
         }
 
         #news dl {
+
         }
 
-        /* 整个新闻结构*/
-        #new dl dt {
-            background: red;
-            width: 300px;
-            height: 200px
+
+        #news dl dt {
+            float: left;
+            width: 234px;
         }
 
-        /* 左边大图结构*/
-        #new dl dd {
+
+        #news dl dd {
+            float: left;
+            width: 829px;
         }
 
-        /*右边整个内容结构*/
-        #new dl dd li {
-            float: left
+        #news dl dd ul{
+            width: 100%;
         }
 
-        /*右边每个内容结构*/
-        #new dl dd .date {
+        #news dl dd li {
+            float: left;
+            width: 50%;
         }
 
-        /* 右边每个日期结构*/
-        #new dl dd .content {
+
+        #news dl dd .date {
         }
 
-        /*右边每个内容结构*/
+
+        #news dl dd .content {
+        }
+
+
 
     </style>
 </head>
@@ -294,10 +301,10 @@
         <p>THE LATEST NEWS</p>
     </div>
     <dl>
-        <dt>
-            fdfdsfdfdsfd
+        <dt >
+            <img src="./image/news_img.png">
         </dt>
-        <dd>
+        <dd >
             <ul>
                 <li>
                     <div class="date">
